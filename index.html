@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PL-AV — Audio Visual Services</title>
+  <meta name="description" content="Professional audio visual for events of any size: sound, lighting, video, staging, and on-site engineers.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:title" content="PL-AV — Audio Visual Services">
+  <meta property="og:description" content="Professional audio visual for events of any size: sound, lighting, video, staging.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#22d3ee' } /* cyan-300 */
+          },
+          boxShadow: {
+            glow: '0 0 0 2px rgb(34 211 238 / 0.35)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Custom scrollbar for a more modern look */
+    * { scrollbar-color: #9ca3af #000; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #000; }
+    ::-webkit-scrollbar-thumb { background: #9ca3af; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #d1d5db; }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 antialiased selection:bg-brand/20">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-neutral-800 focus:text-white focus:px-3 focus:py-2 focus:rounded-md" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-semibold tracking-tight text-white text-lg" aria-label="PL-AV homepage">PL‑AV</a>
+
+      <button id="nav-toggle"
+              class="md:hidden p-2 rounded-md hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-brand"
+              aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Collapsible nav (mobile) + always-visible on desktop -->
+    <nav id="nav-menu" class="hidden md:flex md:items-center md:justify-center border-t md:border-t-0 border-white/10 bg-black/95 md:bg-transparent">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+        <ul class="flex flex-col md:flex-row gap-2 md:gap-6 py-3 md:py-0">
+          <li><a class="block rounded-md px-3 py-2 text-sm text-neutral-300 hover:text-white hover:bg-white/5" href="#services">Services</a></li>
+          <li><a class="block rounded-md px-3 py-2 text-sm text-neutral-300 hover:text-white hover:bg-white/5" href="#rentals">Rentals</a></li>
+          <li><a class="block rounded-md px-3 py-2 text-sm text-neutral-300 hover:text-white hover:bg-white/5" href="#about">About</a></li>
+          <li class="md:ml-auto"><a class="block rounded-md px-3 py-2 text-sm text-neutral-300 hover:text-white hover:bg-white/5" href="#contact">Contact</a></li>
+          <li><a class="inline-flex items-center justify-center rounded-md bg-brand px-3 py-2 text-sm font-medium text-black hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand shadow-glow" href="#contact">Get a quote</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-x-0 top-[-12rem] -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] bg-gradient-to-tr from-brand to-cyan-700 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div class="max-w-3xl">
+          <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-neutral-300 mb-4">
+            <span class="h-2 w-2 rounded-full bg-brand"></span>
+            Availability for Q4 — book now
+          </p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white">
+            Audio Visual services for events that sound and look right
+          </h1>
+          <p class="mt-4 text-neutral-300 max-w-prose">
+            From corporate town halls and conferences to weddings and festivals, PL‑AV provides professional sound, video, and lighting — planned, delivered, and operated by experienced engineers.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-brand px-4 py-2.5 text-sm font-medium text-black hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand shadow-glow">Request a quote</a>
+            <a href="#services" class="inline-flex items-center justify-center rounded-md border border-white/15 px-4 py-2.5 text-sm font-medium text-white hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/40">See services</a>
+          </div>
+          <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-neutral-300">
+            <div class="rounded-lg border border-white/10 bg-white/5 p-3"><span class="font-semibold text-white">Certified engineers</span><br>Audio • Lighting • Video</div>
+            <div class="rounded-lg border border-white/10 bg-white/5 p-3"><span class="font-semibold text-white">Turn‑key AV</span><br>Design • Delivery • Operate</div>
+            <div class="rounded-lg border border-white/10 bg-white/5 p-3"><span class="font-semibold text-white">100+ events/yr</span><br>From 10 to 2,000 attendees</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" aria-labelledby="services-title" class="py-16 md:py-24 border-t border-white/10 bg-neutral-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <h2 id="services-title" class="text-3xl md:text-4xl font-semibold text-white">Services</h2>
+          <p class="mt-2 text-neutral-300">Everything you need for a smooth show — one team, one invoice.</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-lg font-semibold text-white">Live Sound</h3>
+            <p class="mt-1 text-sm text-neutral-300">PA systems, line arrays, stage monitors, wireless mics, mixing, and on‑site engineers.</p>
+          </article>
+
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-lg font-semibold text-white">Video & Projection</h3>
+            <p class="mt-1 text-sm text-neutral-300">Projectors, LED walls, switchers, cameras, IMAG, recordings, and confidence monitors.</p>
+          </article>
+
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-lg font-semibold text-white">Lighting</h3>
+            <p class="mt-1 text-sm text-neutral-300">Stage wash, effects, uplighting, moving heads, programming, and show control.</p>
+          </article>
+
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-lg font-semibold text-white">Staging & Power</h3>
+            <p class="mt-1 text-sm text-neutral-300">Platforms, truss, rigging coordination, cabling, and clean power distribution.</p>
+          </article>
+
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-lg font-semibold text-white">Event Production</h3>
+            <p class="mt-1 text-sm text-neutral-300">Pre‑production, site visits, run‑of‑show, stage management, and show calling.</p>
+          </article>
+
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-lg font-semibold text-white">Installations</h3>
+            <p class="mt-1 text-sm text-neutral-300">Boardrooms, places of worship, bars & venues — design, install, and training.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rentals -->
+    <section id="rentals" aria-labelledby="rentals-title" class="py-16 md:py-24 border-t border-white/10 bg-black">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <h2 id="rentals-title" class="text-3xl md:text-4xl font-semibold text-white">Equipment Rentals</h2>
+          <p class="mt-2 text-neutral-300">Dry‑hire or full service. Ask for our current inventory list.</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-semibold text-white">Audio</h3>
+            <ul class="mt-2 list-disc list-inside text-neutral-300 space-y-1">
+              <li>Line array & point‑source speakers</li>
+              <li>Subwoofers & stage monitors</li>
+              <li>Digital mixers & stage boxes</li>
+              <li>Wireless handhelds & lavs</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-semibold text-white">Video</h3>
+            <ul class="mt-2 list-disc list-inside text-neutral-300 space-y-1">
+              <li>Projectors & fast‑fold screens</li>
+              <li>LED wall panels & processors</li>
+              <li>Switchers, scalers & capture</li>
+              <li>PTZs, cams & confidence monitors</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-semibold text-white">Lighting</h3>
+            <ul class="mt-2 list-disc list-inside text-neutral-300 space-y-1">
+              <li>Wash, spots & moving heads</li>
+              <li>Uplighting & pixel effects</li>
+              <li>DMX control & consoles</li>
+              <li>Stands, truss & rigging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title" class="py-16 md:py-24 border-t border-white/10 bg-neutral-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <h2 id="about-title" class="text-3xl md:text-4xl font-semibold text-white">Why PL‑AV</h2>
+          <p class="mt-2 text-neutral-300">A reliable partner that shows up prepared and finishes strong.</p>
+        </div>
+
+        <dl class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <dt class="font-semibold text-white">Show‑ready plans</dt>
+            <dd class="mt-1 text-sm text-neutral-300">We scope power, rigging, stage size, sightlines, and load‑in before show day.</dd>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <dt class="font-semibold text-white">Clean look, clean sound</dt>
+            <dd class="mt-1 text-sm text-neutral-300">Neat cabling, tidy stage plots, tuned systems, and low‑latency monitoring.</dd>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <dt class="font-semibold text-white">Friendly crew</dt>
+            <dd class="mt-1 text-sm text-neutral-300">Engineers who communicate clearly with planners, talent, and venues.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section aria-labelledby="testimonials-title" class="py-16 md:py-24 border-t border-white/10 bg-black">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 id="testimonials-title" class="text-3xl md:text-4xl font-semibold text-white">Testimonials</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <figure class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <blockquote class="text-neutral-200">&ldquo;Flawless AV from load‑in to last cue. Our exec team was thrilled.&rdquo;</blockquote>
+            <figcaption class="mt-2 text-sm text-neutral-400">— Corporate event planner</figcaption>
+          </figure>
+          <figure class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <blockquote class="text-neutral-200">&ldquo;The sound was crystal clear and the lighting made the room pop.&rdquo;</blockquote>
+            <figcaption class="mt-2 text-sm text-neutral-400">— Wedding couple</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-title" class="py-16 md:py-24 border-t border-white/10 bg-neutral-950">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <h2 id="contact-title" class="text-3xl md:text-4xl font-semibold text-white">Get in touch</h2>
+          <p class="mt-2 text-neutral-300">Tell us about your event and we'll reply with an estimate and availability.</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="md:col-span-2">
+            <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+              <form class="grid grid-cols-1 sm:grid-cols-2 gap-4" onsubmit="window.location.href='mailto:you@example.com?subject=PL-AV%20Quote%20Request&body=' + encodeURIComponent('Name: ' + this.name.value + '\nEmail: ' + this.email.value + '\nPhone: ' + this.phone.value + '\nEvent date: ' + this.date.value + '\nLocation: ' + this.location.value + '\nDetails: ' + this.details.value); return false;">
+                <label class="block text-sm">
+                  <span class="text-neutral-300">Name</span>
+                  <input required type="text" name="name" class="mt-1 w-full rounded-md border border-white/10 bg-black/60 px-3 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="Your name">
+                </label>
+                <label class="block text-sm">
+                  <span class="text-neutral-300">Email</span>
+                  <input required type="email" name="email" class="mt-1 w-full rounded-md border border-white/10 bg-black/60 px-3 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="you@example.com">
+                </label>
+                <label class="block text-sm">
+                  <span class="text-neutral-300">Phone</span>
+                  <input type="tel" name="phone" class="mt-1 w-full rounded-md border border-white/10 bg-black/60 px-3 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="+1 (555) 555‑5555">
+                </label>
+                <label class="block text-sm">
+                  <span class="text-neutral-300">Event date</span>
+                  <input type="date" name="date" class="mt-1 w-full rounded-md border border-white/10 bg-black/60 px-3 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-brand">
+                </label>
+                <label class="block text-sm sm:col-span-2">
+                  <span class="text-neutral-300">Location</span>
+                  <input type="text" name="location" class="mt-1 w-full rounded-md border border-white/10 bg-black/60 px-3 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="Venue / city">
+                </label>
+                <label class="block text-sm sm:col-span-2">
+                  <span class="text-neutral-300">Details</span>
+                  <textarea name="details" rows="4" class="mt-1 w-full rounded-md border border-white/10 bg-black/60 px-3 py-2 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="Audience size, program flow, what you need…"></textarea>
+                </label>
+                <div class="sm:col-span-2">
+                  <button type="submit" class="inline-flex items-center justify-center rounded-md bg-brand px-4 py-2.5 text-sm font-medium text-black hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand shadow-glow">Send request</button>
+                </div>
+              </form>
+              <p class="mt-3 text-xs text-neutral-500">Replace <code>you@example.com</code> with your email. For hosted forms, swap the form <code>onsubmit</code> with your provider’s <code>action</code>.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+              <h3 class="font-semibold text-white">Contact</h3>
+              <ul class="mt-2 text-sm text-neutral-300 space-y-1">
+                <li>Email: <a class="text-white underline decoration-white/30 hover:decoration-white" href="mailto:you@example.com">you@example.com</a></li>
+                <li>Phone: <a class="text-white underline decoration-white/30 hover:decoration-white" href="tel:+15555555555">+1 (555) 555‑5555</a></li>
+                <li>Hours: Mon–Fri 9am–6pm</li>
+              </ul>
+              <hr class="my-4 border-white/10">
+              <h3 class="font-semibold text-white">Service area</h3>
+              <p class="mt-2 text-sm text-neutral-300">Local & regional. Travel shows by request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-black">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="py-8 md:py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-neutral-400">© <span id="year"></span> PL‑AV. All rights reserved.</p>
+        <nav class="flex items-center gap-4 text-sm text-neutral-400">
+          <a class="hover:text-white" href="#services">Services</a>
+          <a class="hover:text-white" href="#rentals">Rentals</a>
+          <a class="hover:text-white" href="#about">About</a>
+          <a class="hover:text-white" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+</body>
+</html>
